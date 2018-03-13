@@ -116,6 +116,24 @@ nav ul.mobile {
   align-items: center;
 }
 
+.info.orientation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info.campus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info.guest-lecture {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .info.mobile {
   display: none;
 }
