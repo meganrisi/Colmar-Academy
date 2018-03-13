@@ -1,48 +1,72 @@
 <!DOCTYPE html>
 <html>
-
+<!-- set alt or aria-label later  -->
   <head>
     <meta charset="utf-8">
     <title>Colmar Academy</title>
       <!-- Reset -->
-    <link href="/resources/style/reset.css" type="text/css" rel="stylesheet">
-    <link rel="icon" href="./<favicon-name>.ico" type="image/x-icon">
+    <link href="./resources/style/reset.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
+    <!-- <link rel="icon" href="./<favicon-name>.ico" type="image/x-icon"> -->
       <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="/resources/style/style.css" type="text/css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
   </head>
 
   <body>
 
     <!-- Header -->
     <header>
-
+    <!-- class="container-fluid" -->
+      <div class="logo" role="presentation">
+        <img id="logo" class="desktop" src="./resources/images/ic-logo.svg"/>
+        <span class="colmar">COLMAR</span>
+        <span class="academy">ACADEMY</span>
+      </div>
     <!-- Navigation -->
-    <nav>
-      <ul role="presentation">
-        <li><a href="#">On campus</a></li>
-        <li><a href="#">Online</a></li>
-        <li><a href="#">or companies</a></li>
-        <li><a href="#">Sign in</a></li>
-      </ul>
-    </nav>
-    
+      <nav>
+    <!-- <nav class="navbar navbar-default navbar-fixed-top" class="desktop"> -->
+          <ul class="desktop" role="presentation">
+            <span><a href="#">On campus</a></span>
+            <span><a href="#">Online</a></span>
+            <span><a href="#">For companies</a></span>
+            <span><a href="#">Sign in</a></span>
+          </ul>
+
+      <!-- Mobile -->
+      <!-- <nav class="navbar navbar-default navbar-fixed-top" class="mobile"> -->
+          <ul class="mobile" role="presentation">
+            <span><a href="#"><img src="./resources/images/ic-logo.svg"></a></span>
+            <span><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></span>
+            <span><a href="#"><img src="./resources/images/ic-online.svg"></a></span>
+            <span><a href="#"><img src="./resources/images/ic-login.svg"></a></span>
+          </ul>
+      </nav>
     </header>
+
+    <!-- Content -->
+    <div class="content">
 
     <!-- Banner -->
     <div class="banner" role="presentation">
-      <img src="/resources/images/banner.jpg"/>
-      <h1 class="jumbotron">Learn something new everyday</h1>
-      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-      <btn>Start here</btn>
+     <!-- class="container" -->
+      <img src="./resources/images/banner.jpg" alt="study group"/>
+      <div class="block-text">
+        <h1>Learn something new everyday</h1>
+        <!-- class="jumbotron" -->
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        <a href="#" class="btn">Start here</a>
+      </div>
     </div>
 
     <!-- Information -->
     <div class="information" role="presentation">
+     <!-- class="container" -->
 
       <!-- Left Side -->
       <div class="main" role="presentation">
-        <img src="/resources/images/information-main.jpg"/>
+        <!-- class="container" -->
+        <img src="./resources/images/information-main.jpg" alt="main"/>
         <h1>It doesn't hurt to keep practicing</h1>
         <h4>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</h4>
         <P>Emanuel, Sr Strategist at Hiring.com</p>
@@ -50,103 +74,149 @@
 
       <!-- Right Side -->
       <div class="info" role="presentation">
-        <div class="orientation" role="presentation">
-          <img src="/resources/images/information-orientation.jpg"/>
+        <!-- class="container" -->
+
+        <!-- Desktop -->
+        <div class="orientation desktop" role="presentation">
+          <img src="./resources/images/information-orientation.jpg"/>
           <h2>Orientation date</h2>
           <h4>Tue 10/11 & Wed 10/12: 8am-3pm</h4>
-          <btn class="more">Read more</btn>
+          <li><a class="more">Read more</a></li>
         </div>
-        <div class="campus" role="presentation">
-          <img src="/resources/images/information-campus.jpg"/>
+        <div class="campus desktop" role="presentation">
+          <img src="./resources/images/information-campus.jpg"/>
           <h2>Our campus</h2>
           <h4>Find which campus is close by you</h4>
-          <btn class="more">Read more</btn>
+          <li><a class="more">Read more</a></li>
         </div>
-        <div class="guest-lecture" role="presentation">
-          <img src="/resources/images/information-guest-lecture.jpg"/>
+        <div class="guest-lecture desktop" role="presentation">
+          <img src="./resources/images/information-guest-lecture.jpg"/>
           <h2>Our guest lecture</h2>
           <h4>Join a keynote with Oliver Sack about music in medical treatment</h4>
-          <btn class="more">Read more</btn>
+          <li><a class="more">Read more</a></li>
         </div>
+
+        <!-- Mobile -->
+        <div class="orientation mobile" role="presentation">
+          <img src="./resources/images/information-orientation-mobile.jpg"/>
+          <h2>Orientation date</h2>
+          <h4>Tue 10/11 & Wed 10/12: 8am-3pm</h4>
+          <li><a class="more">Read more</a></li>
+        </div>
+        <div class="campus mobile" role="presentation">
+          <img src="./resources/images/information-campus-mobile.jpg"/>
+          <h2>Our campus</h2>
+          <h4>Find which campus is close by you</h4>
+          <li><a class="more">Read more</a></li>
+        </div>
+        <div class="guest-lecture mobile" role="presentation">
+          <img src="./resources/images/information-guest-lecture-mobile.jpg"/>
+          <h2>Our guest lecture</h2>
+          <h4>Join a keynote with Oliver Sack about music in medical treatment</h4>
+          <li><a class="more">Read more</a></li>
+        </div>
+
       </div>
 
     </div>
 
     <!-- Course -->
-    <div class="course" role="presentation">
-      <h1>Start learning</h1>
+    <div class="course"  role="presentation">
+      <!-- class="container-fluid" -->
+      <!-- <div class="row" role="presentation"> -->
+        <h1>Start learning</h1>
+        <!-- <h1 class="col-xs-12">Start learning</h1> -->
 
-      <div class="software" role="presentation">
-        <img src="/resources/images/course-software.jpg"/>
-        <h2>Software engineering</h2>
-        <h4 class="courses">COURSES</h4>
-        <h4>Web Development, Mobile Development, iOT, APIs</h4>
-      </div>
-      <div class="computer-art" role="presentation">
-        <img src="/resources/images/course-computer-art.jpg"/>
-        <h2>Computer art</h2>
-        <h4 class="courses">COURSES</h4>
-        <h4>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</h4>
-      </div>
-      <div class="design" role="presentation">
-        <img src="/resources/images/course-design.jpg"/>
-        <h2>Design</h2>
-        <h4 class="courses">COURSES</h4>
-        <h4>User Experience Design, User Research, Visual Design</h4>
-      </div>
-      <div class="data" role="presentation">
-        <img src="/resources/images/course-data.jpg"/>
-        <h2>Data</h2>
-        <h4 class="courses">COURSES</h4>
-        <h4>Data Science, Big Data, SQL, Data Visualization</h4>
-      </div>
-      <div class="business" role="presentation">
-        <img src="/resources/images/course-business.jpg"/>
-        <h2>Business</h2>
-        <h4 class="courses">COURSES</h4>
-        <h4>Product Development, Business Development, Startup</h4>
-      </div>
-      <div class="marketing" role="presentation">
-        <img src="/resources/images/course-marketing.jpg"/>
-        <h2>Marketing</h2>
-        <h4 class="courses">COURSES</h4>
-        <h4>Analytics, Content Marketing, Mobile Marketing</h4>
-      </div>
+        <!-- <div class="grid" role="presentation"> -->
+          <div class="software" role="presentation">
+            <img src="./resources/images/course-software.jpg"/>
+            <!-- class="col-lg-4 col-md-6 col-xs-12" -->
+            <h2 >Software engineering</h2>
+            <h4 class="courses">COURSES</h4>
+            <h4>Web Development, Mobile Development, iOT, APIs</h4>
+          </div>
+          <div class="computer-art" role="presentation">
+            <img src="./resources/images/course-computer-art.jpg"/>
+            <!-- class="col-lg-4 col-md-6 col-xs-12" -->
+            <h2>Computer art</h2>
+            <h4 class="courses">COURSES</h4>
+            <h4>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</h4>
+          </div>
+          <div class="design" role="presentation">
+            <img src="./resources/images/course-design.jpg"/>
+            <!-- class="col-lg-4 col-md-6 col-xs-12" -->
+            <h2>Design</h2>
+            <h4 class="courses">COURSES</h4>
+            <h4>User Experience Design, User Research, Visual Design</h4>
+          </div>
+          <div class="data" role="presentation">
+            <img src="./resources/images/course-data.jpg"/>
+            <!-- class="col-lg-4 col-md-6 col-xs-12" -->
+            <h2>Data</h2>
+            <h4 class="courses">COURSES</h4>
+            <h4>Data Science, Big Data, SQL, Data Visualization</h4>
+          </div>
+          <div class="business" role="presentation">
+            <img src="./resources/images/course-business.jpg"/>
+            <!-- class="col-lg-4 col-md-6 col-xs-12" -->
+            <h2>Business</h2>
+            <h4 class="courses">COURSES</h4>
+            <h4>Product Development, Business Development, Startup</h4>
+          </div>
+          <div class="marketing" role="presentation">
+            <img src="./resources/images/course-marketing.jpg"/>
+            <!-- class="col-lg-4 col-md-6 col-xs-12" -->
+            <h2>Marketing</h2>
+            <h4 class="courses">COURSES</h4>
+            <h4>Analytics, Content Marketing, Mobile Marketing</h4>
+          </div>
+        <!-- </div> -->
+      <!-- </div> -->
 
     </div>
 
     <!-- Thesis -->
     <div class="thesis" role="presentation">
+    <!-- class="container" -->
       <h1>Thesis exhibit</h1>
+      <!-- <h1 class="col-xs-12">Thesis exhibit</h1> -->
 
       <!-- Left Side -->
       <div class="main" role="presentation">
-        <video src="/resources/videos/thesis.mp4"/>
+      <!-- class="container" -->
+        <video src="./resources/videos/thesis.mp4"/>
         <h1>Reimagine urban</h1>
         <h4>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</h4>
       </div>
 
       <!-- Right Side -->
       <div class="info" role="presentation">
+      <!-- class="container" -->
         <div class="fisma" role="presentation">
-          <img src="/resources/images/thesis-fisma.jpg"/>
+          <img src="./resources/images/thesis-fisma.jpg" alt="designer showcase"/>
           <h2>Fisma: Design and Prototype</h2>
           <h4>Designer showcase of new prototype product</h4>
         </div>
         <div class="now-and-then" role="presentation">
-          <img src="/resources/images/thesis-now-and-then.jpg"/>
+          <img src="./resources/images/thesis-now-and-then.jpg" alt="New York"/>
           <h2>Now and then</h2>
           <h4>Research study about New York</h4>
         </div>
       </div>
 
     </div>
+    </div>
 
     <!-- Footer -->
     <footer>
-      <span>©2016 Colmar Academy. All rights reserved.</span>
-      <span>Terms</span>
-      <span>Privacy</span>
+    <!-- <footer class="container-fluid"> -->
+      <div class="copyright" role="presentation">
+        <span>© 2016 Colmar Academy. All rights reserved.</span>
+      </div>
+      <div class= "links" role="presentation">
+        <span class="links">Terms</span>
+        <span class="links">Privacy</span>
+      </div>
     </footer>
 
     <!-- Social Media Icons -->
@@ -156,13 +226,13 @@
          </div> -->
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
 
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
+  <!-- <script src="js/bootstrap.min.js"></script> -->
 
   <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
 
   </body>
 

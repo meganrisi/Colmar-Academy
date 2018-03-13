@@ -1,9 +1,169 @@
 /* Fonts */
+html{
+  font-size: 22px;
+}
+
+/* Body */
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+  margin: 0;
+}
 
 /* Header */
+header {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+  background-color: seashell;
+}
+
+#logo {
+  margin-left: 24px;
+  flex: 1;
+}
+
+.logo {
+  display: flex;
+  height: 32px;
+  align-items: center;
+}
+
+span.colmar {
+  color: #272727;
+  font-weight: 800;
+}
+
+span.academy {
+  color: lightgrey;
+  font-weight: 100;
+}
 
 /* Navigation */
+nav {
+  display: inline-block;
+  padding-right: 16px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 8px;
+  font-family: 'Nanum Gothic', sans-serif;
+  color: black;
+}
+
+nav ul.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  nav ul.desktop {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  nav ul.mobile {
+    display: inline-block;
+  }
+}
 
 /* Content */
+.content {
+  padding-top: 92px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner img {
+  display: 60%;
+  padding-left: 24px;
+}
+
+.banner h1 {
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #272727
+}
+
+.banner a {
+  border: 8px 0;
+  background-color: darkgrey;
+  color: white;
+  width: 4rem;
+  height: 2rem;
+}
+
+/* Information */
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  .info.desktop {
+    display: none;
+  }
+
+  .info.mobile {
+    display: block;
+  }
+}
+
+/* Courses */
+.courses {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Thesis */
+.thesis {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* Footer */
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding-left: 24px;
+}
+
+footer .copyright {
+  text-align: left;
+}
+
+footer .links {
+  text-align: right;
+  padding: 8px;
+}
+
+@media only screen and (max-width: 760px) {
+  footer .links {
+    display: none;
+  }
